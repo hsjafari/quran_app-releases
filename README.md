@@ -1,29 +1,39 @@
-# Quran Reader — Android downloads
+# رمز آیه — دریافت نسخهٔ اندروید
 
-[Download the latest signed APK](https://github.com/hsjafari/quran_app-releases/releases/latest/download/quran-release.apk)
+[آخرین انتشار و تمام فایل‌ها](https://github.com/hsjafari/quran_app-releases/releases/latest)
 
-[All releases and checksums](https://github.com/hsjafari/quran_app-releases/releases)
+| نسخه | دریافت APK | دسترسی |
+| --- | --- | --- |
+| **کامل** | [دانلود نسخهٔ کامل](https://github.com/hsjafari/quran_app-releases/releases/latest/download/quran-full-release.apk) | تمام کتاب و ۱۰۷۰ رمز از ابتدا فعال، بدون نیاز به پرداخت یا بازیابی |
+| **عادی** | [دانلود نسخهٔ عادی](https://github.com/hsjafari/quran_app-releases/releases/latest/download/quran-release.apk) | جلد و مقدمه و ۲۰ صفحهٔ آغاز متن کتاب؛ پرداخت در این بیلد هنوز پیکربندی نشده است |
 
-Anyone can download these releases without a GitHub account. This repository
-contains download information and signed Android packages. App source is private.
+نسخهٔ فعلی: **۰٫۶٫۸**، شمارهٔ ساخت **۲۱**. اندروید **۶٫۰ یا جدیدتر** لازم است.
 
-## Install
+## نصب و به‌روزرسانی
 
-Download `quran-release.apk` from a release's Assets section and open it on your
-Android phone. Android 6.0 or newer is required. The automatically generated
-"Source code" ZIP is not the Android app.
+فایل APK موردنظر را کامل دانلود کنید و روی گوشی باز کنید. فایل ZIP با عنوان «Source code» نصب‌کنندهٔ اندروید نیست.
 
-Each release includes `quran-release.apk.sha256` to verify the download. For
-version 0.2.1, the APK SHA256 is:
+دو نسخه با هم قابل نصب‌اند:
+
+- عادی: `ir.quran.reader`، با نام «رمز آیه»
+- کامل: `ir.quran.reader.full`، با نام «رمز آیه ـ نسخهٔ کامل»
+
+نسخهٔ عادی با همان گواهی انتشار قبلی امضا شده و روی انتشارهای رسمی قبلی به‌روزرسانی می‌شود. نسخهٔ کامل برنامهٔ مستقلی است و داده‌های نصب عادی را جایگزین نمی‌کند.
+
+نصب‌های آزمایشی قدیمی با کلید debug، گواهی دیگری دارند و به‌روزرسانی مستقیم آن‌ها با انتشار رسمی ممکن نیست. پیش از حذف چنین نصبی، داده‌های موردنیاز را نگه دارید؛ حذف برنامه داده‌های محلی آن را پاک می‌کند.
+
+## صحت فایل‌ها
+
+[مجموع SHA256 فایل‌های نصب](https://github.com/hsjafari/quran_app-releases/releases/latest/download/SHA256SUMS.txt)
+
+[مشخصات نسخه‌ها و امضا](https://github.com/hsjafari/quran_app-releases/releases/latest/download/release-manifest.json)
+
+هر APK فایل `.sha256` مخصوص خودش را هم دارد. گواهی عمومی امضای انتشار:
 
 ```text
-377aafd18f7257292708261282dac47e8adcfe852c65a4fd50cca34b43666f99
+c82e967c731ff56f80069a546a294abbe6a477e3b9f816a26c4dc2f04f2eb022
 ```
 
-The release key differs from older debug builds. Android cannot update an old
-debug installation with this release. Preserve any needed data before uninstalling
-the debug app; uninstalling deletes its local data.
+امضاهای v1/v2/v3، هم‌ترازی ZIP، سلامت آرشیو و نبود حالت debug بررسی شده‌اند. نصب و اجرای هر دو نسخه و تفاوت دسترسی آن‌ها روی Nox آزمایش شده است.
 
-If Android reports an invalid package, confirm the download completed and report
-the exact error and Android version. Signature and package checks passed for
-0.2.1, but installation on a Galaxy A15 has not yet been verified.
+[همهٔ انتشارها](https://github.com/hsjafari/quran_app-releases/releases)
